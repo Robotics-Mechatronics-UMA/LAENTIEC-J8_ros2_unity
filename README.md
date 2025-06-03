@@ -33,7 +33,7 @@ cd LAENTIEC-J8_ros2_unity/src
 colcon build
 ```
 * **Unity Configuration**:
-* Download the folder containing the project: Unity-ROS2-Project. **IMPORTANT**: This repository is being updated. In the meantime, please refer to https://github.com/Robotics-Mechatronics-UMA/LAENTIEC-J8_ros2_unity/tree/main for the Unity files.
+* Download the folder containing the project: Unity-ROS2-Project. **IMPORTANT**: This repository is being updated. In the meantime, please refer to https://github.com/Kmdnb/TFG_KDN_UnityROS2 for the Unity files.
 
 * Open the Unity project:
  * From Unity Hub - Select "Open project": Once the editor has started, you will see a welcome screen. Look for and select the "Open project" option.
@@ -84,3 +84,6 @@ Unity: Verify that data is being received and processed correctly in Unity.
 
 ## 6. Multimedia
 This section includes an image of the robot and the simulated terrain, as well as a video summarizing the simulation's operation.
+
+### Notice:
+This is a streamlined version of the original repository at https://github.com/Kmdnb/TFG_KDN_UnityROS2. You can visit it for more details.
