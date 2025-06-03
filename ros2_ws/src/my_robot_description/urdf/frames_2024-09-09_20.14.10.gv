@@ -1,0 +1,15 @@
+digraph G {
+"base_link" -> "LiDAR"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "wheel_back_left"[label=" Broadcaster: default_authority\nAverage rate: 10.179\nBuffer length: 5.01\nMost recent transform: 1725905650.845143\nOldest transform: 1725905645.835006\n"];
+"base_link" -> "wheel_back_right"[label=" Broadcaster: default_authority\nAverage rate: 10.179\nBuffer length: 5.01\nMost recent transform: 1725905650.845143\nOldest transform: 1725905645.835006\n"];
+"base_link" -> "wheel_front_left"[label=" Broadcaster: default_authority\nAverage rate: 10.179\nBuffer length: 5.01\nMost recent transform: 1725905650.845143\nOldest transform: 1725905645.835006\n"];
+"base_link" -> "wheel_front_right"[label=" Broadcaster: default_authority\nAverage rate: 10.179\nBuffer length: 5.01\nMost recent transform: 1725905650.845143\nOldest transform: 1725905645.835006\n"];
+"base_link" -> "wheel_midback_left"[label=" Broadcaster: default_authority\nAverage rate: 10.179\nBuffer length: 5.01\nMost recent transform: 1725905650.845143\nOldest transform: 1725905645.835006\n"];
+"base_link" -> "wheel_midback_right"[label=" Broadcaster: default_authority\nAverage rate: 10.179\nBuffer length: 5.01\nMost recent transform: 1725905650.845143\nOldest transform: 1725905645.835006\n"];
+"base_link" -> "wheel_midfront_left"[label=" Broadcaster: default_authority\nAverage rate: 10.179\nBuffer length: 5.01\nMost recent transform: 1725905650.845143\nOldest transform: 1725905645.835006\n"];
+"base_link" -> "wheel_midfront_right"[label=" Broadcaster: default_authority\nAverage rate: 10.179\nBuffer length: 5.01\nMost recent transform: 1725905650.845143\nOldest transform: 1725905645.835006\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1725905650.8512607"[ shape=plaintext ] ;
+}->"base_link";
+}

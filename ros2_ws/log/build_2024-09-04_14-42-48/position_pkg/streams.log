@@ -1,0 +1,37 @@
+[0.903s] Invoking command in '/home/k/ros2_ws/src/position_pkg': PYTHONPATH=/home/k/ros2_ws/build/position_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/k/ros2_ws/install/position_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/position_pkg build --build-base /home/k/ros2_ws/build/position_pkg/build install --record /home/k/ros2_ws/build/position_pkg/install.log --single-version-externally-managed install_data
+[1.063s] running egg_info
+[1.064s] creating ../../build/position_pkg/position_pkg.egg-info
+[1.064s] writing ../../build/position_pkg/position_pkg.egg-info/PKG-INFO
+[1.065s] writing dependency_links to ../../build/position_pkg/position_pkg.egg-info/dependency_links.txt
+[1.065s] writing entry points to ../../build/position_pkg/position_pkg.egg-info/entry_points.txt
+[1.065s] writing requirements to ../../build/position_pkg/position_pkg.egg-info/requires.txt
+[1.065s] writing top-level names to ../../build/position_pkg/position_pkg.egg-info/top_level.txt
+[1.065s] writing manifest file '../../build/position_pkg/position_pkg.egg-info/SOURCES.txt'
+[1.065s] reading manifest file '../../build/position_pkg/position_pkg.egg-info/SOURCES.txt'
+[1.066s] writing manifest file '../../build/position_pkg/position_pkg.egg-info/SOURCES.txt'
+[1.066s] running build
+[1.066s] running build_py
+[1.066s] creating /home/k/ros2_ws/build/position_pkg/build
+[1.066s] creating /home/k/ros2_ws/build/position_pkg/build/lib
+[1.066s] creating /home/k/ros2_ws/build/position_pkg/build/lib/position_pkg
+[1.066s] copying position_pkg/pose_subscriber_node.py -> /home/k/ros2_ws/build/position_pkg/build/lib/position_pkg
+[1.066s] copying position_pkg/__init__.py -> /home/k/ros2_ws/build/position_pkg/build/lib/position_pkg
+[1.066s] running install
+[1.066s] running install_lib
+[1.067s] creating /home/k/ros2_ws/install/position_pkg/lib/python3.10/site-packages/position_pkg
+[1.067s] copying /home/k/ros2_ws/build/position_pkg/build/lib/position_pkg/pose_subscriber_node.py -> /home/k/ros2_ws/install/position_pkg/lib/python3.10/site-packages/position_pkg
+[1.067s] copying /home/k/ros2_ws/build/position_pkg/build/lib/position_pkg/__init__.py -> /home/k/ros2_ws/install/position_pkg/lib/python3.10/site-packages/position_pkg
+[1.068s] byte-compiling /home/k/ros2_ws/install/position_pkg/lib/python3.10/site-packages/position_pkg/pose_subscriber_node.py to pose_subscriber_node.cpython-310.pyc
+[1.068s] byte-compiling /home/k/ros2_ws/install/position_pkg/lib/python3.10/site-packages/position_pkg/__init__.py to __init__.cpython-310.pyc
+[1.068s] running install_data
+[1.068s] creating /home/k/ros2_ws/install/position_pkg/share/ament_index
+[1.068s] creating /home/k/ros2_ws/install/position_pkg/share/ament_index/resource_index
+[1.068s] creating /home/k/ros2_ws/install/position_pkg/share/ament_index/resource_index/packages
+[1.068s] copying resource/position_pkg -> /home/k/ros2_ws/install/position_pkg/share/ament_index/resource_index/packages
+[1.068s] copying package.xml -> /home/k/ros2_ws/install/position_pkg/share/position_pkg
+[1.068s] running install_egg_info
+[1.068s] Copying ../../build/position_pkg/position_pkg.egg-info to /home/k/ros2_ws/install/position_pkg/lib/python3.10/site-packages/position_pkg-0.0.0-py3.10.egg-info
+[1.069s] running install_scripts
+[1.083s] Installing pose_node script to /home/k/ros2_ws/install/position_pkg/lib/position_pkg
+[1.083s] writing list of installed files to '/home/k/ros2_ws/build/position_pkg/install.log'
+[1.106s] Invoked command in '/home/k/ros2_ws/src/position_pkg' returned '0': PYTHONPATH=/home/k/ros2_ws/build/position_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/k/ros2_ws/install/position_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/position_pkg build --build-base /home/k/ros2_ws/build/position_pkg/build install --record /home/k/ros2_ws/build/position_pkg/install.log --single-version-externally-managed install_data

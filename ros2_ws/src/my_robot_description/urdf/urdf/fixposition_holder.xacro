@@ -1,0 +1,387 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Define a macro for the bridge joint -->
+<xacro:macro name="bridge_joint" params="xyz rpy">
+<link
+    name="Fixposion_base">
+    <inertial>
+      <origin
+        xyz="-0.20204 0.0024993 0.014284"
+        rpy="0 0 0" />
+      <mass
+        value="0.33336" />
+      <inertia
+        ixx="0.00093999"
+        ixy="-5.8116E-11"
+        ixz="1.8511E-08"
+        iyy="0.0045678"
+        iyz="-1.727E-08"
+        izz="0.0036292" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_description/meshes/Fixposion_base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 0.2" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_description/meshes/Fixposion_base.STL" />
+      </geometry>
+    </collision>
+  </link>
+    <xacro:set_gazebo_color link_name="Fixposion_base" r="0.0" g="0.0" b="0.0"/> <!-- Black-->
+  <joint
+    name="Bridge_fixposion_base_joint"
+    type="fixed">
+        <origin xyz="${xyz}" rpy="${rpy}" />
+    <parent
+      link="Bridge" />
+    <child
+      link="Fixposion_base" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Left_fixposition_feet">
+    <inertial>
+      <origin
+        xyz="0.034556 0.032987 2.2204E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.079938" />
+      <inertia
+        ixx="6.1363E-05"
+        ixy="-7.2002E-06"
+        ixz="6.4262E-21"
+        iyy="2.1739E-05"
+        iyz="-2.7645E-20"
+        izz="5.4705E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_description/meshes/Left_fixposition_feet.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.92549 0.90196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_description/meshes/Left_fixposition_feet.STL" />
+      </geometry>
+    </collision>
+  </link>
+    <xacro:set_gazebo_color link_name="Left_fixposition_feet" r="0.2941" g="0.3255" b="0.1255"/> <!-- Military Green -->
+  <joint
+    name="Left_fixposition_feet_joint"
+    type="fixed">
+    <origin
+      xyz="-0.060832 0.005 0.052821"
+      rpy="3.1416 0 3.1416" />
+    <parent
+      link="Fixposion_base" />
+    <child
+      link="Left_fixposition_feet" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Left_fixposition_holder">
+    <inertial>
+      <origin
+        xyz="9.6982E-09 0.016739 0.01561"
+        rpy="0 0 0" />
+      <mass
+        value="0.010272" />
+      <inertia
+        ixx="9.9327E-07"
+        ixy="2.2546E-12"
+        ixz="-6.9048E-13"
+        iyy="1.0096E-06"
+        iyz="-6.4195E-12"
+        izz="1.5191E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_description/meshes/Left_fixposition_holder.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_description/meshes/Left_fixposition_holder.STL" />
+      </geometry>
+    </collision>
+  </link>
+    <xacro:set_gazebo_color link_name="Left_fixposition_holder" r="0.0" g="0.0" b="0.0"/> <!-- Black -->
+  <joint
+    name="Left_fixposition_holder_joint"
+    type="fixed">
+    <origin
+      xyz="0.022601 0.078 0.00025"
+      rpy="0 1.5708 0" />
+    <parent
+      link="Left_fixposition_feet" />
+    <child
+      link="Left_fixposition_holder" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Central_fixposition_feet">
+    <inertial>
+      <origin
+        xyz="-0.0036553 0.032987 0.02961"
+        rpy="0 0 0" />
+      <mass
+        value="0.079938" />
+      <inertia
+        ixx="6.1363E-05"
+        ixy="-7.2002E-06"
+        ixz="-2.22E-19"
+        iyy="2.1739E-05"
+        iyz="2.8819E-19"
+        izz="5.4705E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_description/meshes/Central_fixposition_feet.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.92549 0.90196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_description/meshes/Central_fixposition_feet.STL" />
+      </geometry>
+    </collision>
+  </link>
+    <xacro:set_gazebo_color link_name="Central_fixposition_feet" r="0.2941" g="0.3255" b="0.1255"/> <!-- Military Green -->
+  <joint
+    name="Central_fixposition_feet_joint"
+    type="fixed">
+    <origin
+      xyz="-0.17218 0.005 -0.013029"
+      rpy="0.0 -1.5708 0" />
+    <parent
+      link="Fixposion_base" />
+    <child
+      link="Central_fixposition_feet" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Central_fixposition_holder">
+    <inertial>
+      <origin
+        xyz="-0.02161 0.016739 -3.809E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.010272" />
+      <inertia
+        ixx="9.9327E-07"
+        ixy="2.2546E-12"
+        ixz="-6.9048E-13"
+        iyy="1.0096E-06"
+        iyz="-6.4195E-12"
+        izz="1.5191E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_description/meshes/Central_fixposition_holder.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_description/meshes/Central_fixposition_holder.STL" />
+      </geometry>
+    </collision>
+  </link>
+      <xacro:set_gazebo_color link_name="Central_fixposition_holder" r="0.2941" g="0.3255" b="0.1255"/> <!-- Black -->
+  <joint
+    name="Central_fixposition_holder_joint"
+    type="fixed">
+    <origin
+      xyz="0 0.078 0.00825"
+      rpy="0 1.5708 0" />
+    <parent
+      link="Central_fixposition_feet" />
+    <child
+      link="Central_fixposition_holder" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+ 
+ 
+  <link
+    name="Right_fixposition_feet">
+    <inertial>
+      <origin
+        xyz="-0.021265 0.032987 -3.3307E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.079938" />
+      <inertia
+        ixx="6.1363E-05"
+        ixy="-7.2002E-06"
+        ixz="3.2408E-21"
+        iyy="2.1739E-05"
+        iyz="-1.2404E-20"
+        izz="5.4705E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_description/meshes/Right_fixposition_feet.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.92549 0.90196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_description/meshes/Right_fixposition_feet.STL" />
+      </geometry>
+    </collision>
+  </link>
+        <xacro:set_gazebo_color link_name="Right_fixposition_feet" r="0.2941" g="0.3255" b="0.1255"/> <!-- Black -->
+  <joint
+    name="Right_fixposition_feet_joint"
+    type="fixed">
+    <origin
+      xyz="-0.28743 0.005 0.052321"
+      rpy="0 0 0" />
+    <parent
+      link="Fixposion_base" />
+    <child
+      link="Right_fixposition_feet" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Right_fixposition_holder">
+    <inertial>
+      <origin
+        xyz="9.6982E-09 0.016739 -0.01561"
+        rpy="0 0 0" />
+      <mass
+        value="0.010272" />
+      <inertia
+        ixx="9.9327E-07"
+        ixy="2.2546E-12"
+        ixz="-6.9048E-13"
+        iyy="1.0096E-06"
+        iyz="-6.4195E-12"
+        izz="1.5191E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_description/meshes/Right_fixposition_holder.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_description/meshes/Right_fixposition_holder.STL" />
+      </geometry>
+    </collision>
+  </link>
+      <xacro:set_gazebo_color link_name="Right_fixposition_holder" r="0.0" g="0.0" b="0.0"/> <!-- Black -->
+  <joint
+    name="Right_fixposition_holder_holder"
+    type="fixed">
+    <origin
+      xyz="-0.002 0.078 0.00025"
+      rpy="0 1.5708 0" />
+    <parent
+      link="Right_fixposition_feet" />
+    <child
+      link="Right_fixposition_holder" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  </xacro:macro>
+
+</robot>
+

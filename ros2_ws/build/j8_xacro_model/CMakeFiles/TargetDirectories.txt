@@ -1,0 +1,9 @@
+/home/k/ros2_ws/build/j8_xacro_model/CMakeFiles/uninstall.dir
+/home/k/ros2_ws/build/j8_xacro_model/CMakeFiles/j8_xacro_model_uninstall.dir
+/home/k/ros2_ws/build/j8_xacro_model/CMakeFiles/test.dir
+/home/k/ros2_ws/build/j8_xacro_model/CMakeFiles/edit_cache.dir
+/home/k/ros2_ws/build/j8_xacro_model/CMakeFiles/rebuild_cache.dir
+/home/k/ros2_ws/build/j8_xacro_model/CMakeFiles/list_install_components.dir
+/home/k/ros2_ws/build/j8_xacro_model/CMakeFiles/install.dir
+/home/k/ros2_ws/build/j8_xacro_model/CMakeFiles/install/local.dir
+/home/k/ros2_ws/build/j8_xacro_model/CMakeFiles/install/strip.dir

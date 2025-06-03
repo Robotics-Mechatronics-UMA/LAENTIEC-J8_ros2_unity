@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:macro name="lidar" params="name parent origin_xyz origin_rpy mass update_rate min_angle max_angle stddev num_samples min_range max_range">
+    <link name="${name}_link">
+      <inertial>
+        <origin xyz="${origin_xyz}" rpy="${origin_rpy}" />
+        <mass value="${mass}" />
+        <inertia ixx="0.00069055" ixy="0" ixz="0" iyy="0.0006838" iyz="0" izz="0.00083911" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="$(find meshes/${name}.STL" />
+        </geometry>
+        <!-- Default color for all lidars -->
+        <material name="">
+          <color rgba="0.5 0.5 0.5 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="$(find meshes/${name}.STL" />
+        </geometry>
+      </collision>
+    </link>
+    <joint name="${name}_joint" type="fixed">
+      <origin xyz="${origin_xyz}" rpy="${origin_rpy}" />
+      <parent link="${parent}" />
+      <child link="${name}_link" />
+      <axis xyz="0 0 0" />
+    </joint>
+   <xacro:set_gazebo_color link_name="${name}_link" r="0.8" g="0.8" b="0.8"/> <!-- Light Grey -->
+   
+  </xacro:macro>
+</robot>

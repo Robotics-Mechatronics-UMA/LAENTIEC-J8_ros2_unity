@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+<xacro:macro name="wheel_with_suspension" params="number parent suspension_xyz wheel_xyz">
+      <xacro:property name="wheel_name" value="Wheel_${number}"/>
+    <xacro:property name="suspension_name" value="Suspension_${number}"/>
+      <!-- Suspension Link -->
+    <link name="${suspension_name}">
+        <inertial>
+            <origin xyz="4.4409E-16 -0.005 2.2204E-16" rpy="0 0 0"/>
+            <mass value="10.0"/>
+            <inertia ixx="5.0" ixy="8.0515E-20" ixz="0" iyy="5.0" iyz="1.9328E-19" izz="5.0"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="$(find meshes/${suspension_name}.STL"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.79216 0.81961 0.93333 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="$(find meshes/${suspension_name}.STL"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- Prismatic Joint (Base Link to Suspension) -->
+    <joint name="base_${suspension_name}_joint" type="prismatic">
+        <origin xyz="${suspension_xyz}" rpy=" 0 0 0 "/>
+        <parent link="${parent}"/>
+        <child link="${suspension_name}"/>
+        <axis xyz="0 0 1" /> 
+         <limit effort="1000000000000.0" lower="-10.0" upper="10.0" velocity="0.0"/>
+        <dynamics damping="100.0" friction="1000000000000.0"/>
+        </joint>
+    
+    <gazebo reference="base_${suspension_name}_joint">
+
+        <implicitSpringDamper>true</implicitSpringDamper>
+        <springStiffness>500000000000000</springStiffness>
+        <springReference>0.0</springReference>
+      </gazebo>
+      
+    <link name="${wheel_name}">
+      <!-- Inertial, visual, and collision properties -->
+      <inertial>
+        <origin xyz="0 0.17637 0" rpy="0 0 0"/>
+        <mass value="5.205463824313"/>
+        <inertia ixx="3.66317923670982" ixy="0" ixz="0" iyy="3.66317923670982" iyz="0" izz="5.43484629444829"/>
+      </inertial>
+      <visual>
+      <origin xyz="0 0 0" rpy="${M_PI/2} 0 0"/>
+        <geometry>
+          <cylinder radius="0.298" length="0.30"/>
+        </geometry>
+         
+         <!-- <geometry> <mesh filename="$(find j8_xacro_model)/meshes/${name}.STL"/>
+        </geometry>-->
+        <material name="">
+          <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="${M_PI/2} 0 0"/>
+        <geometry>
+          <cylinder radius="0.298" length="0.30"/>
+        </geometry>
+                <!-- <geometry>
+          <mesh filename="$(find j8_xacro_model)/meshes/${name}.STL"/>
+        </geometry>-->
+      </collision>
+    </link>
+      <xacro:set_gazebo_color link_name="${wheel_name}" r="0.0" g="0.0" b="0.0"/>
+
+
+    <gazebo reference="${wheel_name}">
+   	<kp>100000000000000.0</kp>
+        <kd>0.8</kd>
+    	<mu>0.25</mu>
+    	<mu2>0.25</mu2> 
+      <fdir1> 1 0 0</fdir1>
+    </gazebo>
+
+ <joint name="${suspension_name}_${wheel_name}_joint" type="continuous">
+
+        <origin xyz="${wheel_xyz}" rpy="0 0 0"/>
+      <parent link="${suspension_name}"/>
+      <child link="${wheel_name}"/>
+      <axis xyz="0 1 0"/>
+    </joint>
+    <gazebo reference="${suspension_name}_${wheel_name}_joint">
+
+    </gazebo>
+
+  </xacro:macro>
+</robot>
+

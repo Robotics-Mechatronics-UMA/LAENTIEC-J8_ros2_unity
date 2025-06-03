@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:macro name="gps" params="side origin_xyz origin_rpy gps_sensor_name frame_name fix_topic vel_topic">
+    <xacro:property name="gps_name" value="${side}_gps"/>
+    <xacro:property name="gps_holder" value="${side}_gps_holder"/>
+    <xacro:property name="gps_mesh" value="package://my_robot_description/meshes/${gps_name}.STL"/>
+
+ <link
+    name="${side}_gps">
+    <inertial>
+      <origin
+        xyz="0.0001309 0.0375 0.010255"
+        rpy="0 0 0" />
+      <mass
+        value="0.07021" />
+      <inertia
+        ixx="2.1784E-05"
+        ixy="2.6915E-11"
+        ixz="-1.5698E-09"
+        iyy="2.0279E-05"
+        iyz="5.606E-12"
+        izz="3.6479E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_description/meshes/Left_gps.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.51373 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_description/meshes/Left_gps.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+    <joint name="${gps_name}_joint" type="fixed">
+      <origin xyz="${origin_xyz}" rpy="${origin_rpy}" />
+      <parent link="${gps_holder}" />
+      <child link="${gps_name}" />
+      <axis xyz="0 0 0" />
+    </joint>
+
+  </xacro:macro>
+</robot>
+

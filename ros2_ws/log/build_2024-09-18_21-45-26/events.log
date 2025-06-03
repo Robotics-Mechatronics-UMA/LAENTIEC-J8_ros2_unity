@@ -1,0 +1,7 @@
+[0.000000] (-) TimerEvent: {}
+[0.000092] (-) JobUnselected: {'identifier': 'hardware_pkg'}
+[0.000106] (-) JobUnselected: {'identifier': 'lidar_subscriber'}
+[0.000114] (-) JobUnselected: {'identifier': 'my_robot_description'}
+[0.000121] (-) JobUnselected: {'identifier': 'position_pkg'}
+[0.000131] (-) JobUnselected: {'identifier': 'ros_tcp_endpoint'}
+[0.000421] (-) EventReactorShutdown: {}

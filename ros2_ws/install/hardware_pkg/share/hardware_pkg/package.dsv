@@ -1,0 +1,3 @@
+source;share/hardware_pkg/hook/pythonpath.ps1
+source;share/hardware_pkg/hook/pythonpath.dsv
+source;share/hardware_pkg/hook/pythonpath.sh

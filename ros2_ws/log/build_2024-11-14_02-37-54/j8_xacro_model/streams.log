@@ -1,0 +1,48 @@
+[0.533s] Invoking command in '/home/k/ros2_ws/build/j8_xacro_model': CMAKE_PREFIX_PATH=/home/k/ros2_ws/install/teleop_twist_keyboard:/home/k/ros2_ws/install/teleop_pkg:/home/k/ros2_ws/install/ros_tcp_endpoint:/home/k/ros2_ws/install/position_pkg:/home/k/ros2_ws/install/my_robot_description:/home/k/ros2_ws/install/lidar_subscriber:/home/k/ros2_ws/install/fixposition_pkg:/home/k/ros2_ws/install/camera_subscriber:/opt/ros/humble /usr/bin/cmake /home/k/ros2_ws/src/j8_model_xacro -DCMAKE_INSTALL_PREFIX=/home/k/ros2_ws/install/j8_xacro_model
+[1.445s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.447s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.447s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.447s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.447s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.447s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.447s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.447s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.448s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[1.448s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.448s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.448s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.448s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.448s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.449s] -- Looking for pthread.h
+[1.449s] -- Looking for pthread.h - found
+[1.449s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.449s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.449s] -- Found Threads: TRUE  
+[1.451s] -- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)
+[1.451s] -- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.451s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.451s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.451s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.451s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.451s] -- Configuring incomplete, errors occurred!
+[1.451s] See also "/home/k/ros2_ws/build/j8_xacro_model/CMakeFiles/CMakeOutput.log".
+[1.451s] [31mCMake Error at CMakeLists.txt:22 (find_package):
+[1.451s]   By not providing "Findargj801_ctl_platform_interfaces.cmake" in
+[1.451s]   CMAKE_MODULE_PATH this project has asked CMake to find a package
+[1.452s]   configuration file provided by "argj801_ctl_platform_interfaces", but CMake
+[1.452s]   did not find one.
+[1.452s] 
+[1.453s]   Could not find a package configuration file provided by
+[1.453s]   "argj801_ctl_platform_interfaces" with any of the following names:
+[1.453s] 
+[1.453s]     argj801_ctl_platform_interfacesConfig.cmake
+[1.453s]     argj801_ctl_platform_interfaces-config.cmake
+[1.454s] 
+[1.454s]   Add the installation prefix of "argj801_ctl_platform_interfaces" to
+[1.454s]   CMAKE_PREFIX_PATH or set "argj801_ctl_platform_interfaces_DIR" to a
+[1.454s]   directory containing one of the above files.  If
+[1.454s]   "argj801_ctl_platform_interfaces" provides a separate development package
+[1.454s]   or SDK, be sure it has been installed.
+[1.454s] 
+[1.454s] [0m
+[1.473s] Invoked command in '/home/k/ros2_ws/build/j8_xacro_model' returned '1': CMAKE_PREFIX_PATH=/home/k/ros2_ws/install/teleop_twist_keyboard:/home/k/ros2_ws/install/teleop_pkg:/home/k/ros2_ws/install/ros_tcp_endpoint:/home/k/ros2_ws/install/position_pkg:/home/k/ros2_ws/install/my_robot_description:/home/k/ros2_ws/install/lidar_subscriber:/home/k/ros2_ws/install/fixposition_pkg:/home/k/ros2_ws/install/camera_subscriber:/opt/ros/humble /usr/bin/cmake /home/k/ros2_ws/src/j8_model_xacro -DCMAKE_INSTALL_PREFIX=/home/k/ros2_ws/install/j8_xacro_model

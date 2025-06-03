@@ -1,0 +1,5 @@
+  File "/home/k/ros2_ws/install/teleop_pkg/lib/python3.10/site-packages/teleop_pkg/teleop_node.py", line 31
+    bool acceleration = False
+         ^^^^^^^^^^^^
+SyntaxError: invalid syntax
+

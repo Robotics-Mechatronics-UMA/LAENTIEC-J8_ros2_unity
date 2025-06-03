@@ -1,0 +1,36 @@
+[0.546s] Invoking command in '/home/k/ros2_ws/build/j8_xacro_model': CMAKE_PREFIX_PATH=/home/k/ros2_ws/install/teleop_twist_keyboard:/home/k/ros2_ws/install/teleop_pkg:/home/k/ros2_ws/install/ros_tcp_endpoint:/home/k/ros2_ws/install/position_pkg:/home/k/ros2_ws/install/my_robot_description:/home/k/ros2_ws/install/lidar_subscriber:/home/k/ros2_ws/install/fixposition_pkg:/home/k/ros2_ws/install/camera_subscriber:/opt/ros/humble /usr/bin/cmake /home/k/ros2_ws/src/j8_model_xacro -DCMAKE_INSTALL_PREFIX=/home/k/ros2_ws/install/j8_xacro_model
+[1.279s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.279s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.279s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.279s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.279s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.279s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.279s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.279s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.279s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[1.279s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.279s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.280s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.280s] -- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)
+[1.280s] -- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.280s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.280s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.280s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.281s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.281s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.281s] -- Configured cppcheck include dirs: 
+[1.281s] -- Configured cppcheck exclude dirs and/or files: 
+[1.281s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.281s] -- Added test 'lint_cmake' to check CMake code style
+[1.281s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.282s] -- Added test 'uncrustify' to check C / C++ code style
+[1.282s] -- Configured uncrustify additional arguments: 
+[1.282s] -- Added test 'xmllint' to check XML markup files
+[1.282s] -- Configuring incomplete, errors occurred!
+[1.282s] See also "/home/k/ros2_ws/build/j8_xacro_model/CMakeFiles/CMakeOutput.log".
+[1.282s] [31mCMake Error at CMakeLists.txt:33 (install):
+[1.282s]   install TARGETS given target "gazebo_ros_j8_wheels_plugin" which does not
+[1.283s]   exist.
+[1.283s] 
+[1.283s] [0m
+[1.458s] Invoked command in '/home/k/ros2_ws/build/j8_xacro_model' returned '1': CMAKE_PREFIX_PATH=/home/k/ros2_ws/install/teleop_twist_keyboard:/home/k/ros2_ws/install/teleop_pkg:/home/k/ros2_ws/install/ros_tcp_endpoint:/home/k/ros2_ws/install/position_pkg:/home/k/ros2_ws/install/my_robot_description:/home/k/ros2_ws/install/lidar_subscriber:/home/k/ros2_ws/install/fixposition_pkg:/home/k/ros2_ws/install/camera_subscriber:/opt/ros/humble /usr/bin/cmake /home/k/ros2_ws/src/j8_model_xacro -DCMAKE_INSTALL_PREFIX=/home/k/ros2_ws/install/j8_xacro_model

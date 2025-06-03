@@ -1,0 +1,17 @@
+digraph G {
+"base_link" -> "LiDAR"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "base_footprint"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "camera"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "wheel_back_left"[label=" Broadcaster: default_authority\nAverage rate: 10.216\nBuffer length: 4.992\nMost recent transform: 1725912013.226065\nOldest transform: 1725912008.233678\n"];
+"base_link" -> "wheel_back_right"[label=" Broadcaster: default_authority\nAverage rate: 10.216\nBuffer length: 4.992\nMost recent transform: 1725912013.226065\nOldest transform: 1725912008.233678\n"];
+"base_link" -> "wheel_front_left"[label=" Broadcaster: default_authority\nAverage rate: 10.216\nBuffer length: 4.992\nMost recent transform: 1725912013.226065\nOldest transform: 1725912008.233678\n"];
+"base_link" -> "wheel_front_right"[label=" Broadcaster: default_authority\nAverage rate: 10.216\nBuffer length: 4.992\nMost recent transform: 1725912013.226065\nOldest transform: 1725912008.233678\n"];
+"base_link" -> "wheel_midback_left"[label=" Broadcaster: default_authority\nAverage rate: 10.216\nBuffer length: 4.992\nMost recent transform: 1725912013.226065\nOldest transform: 1725912008.233678\n"];
+"base_link" -> "wheel_midback_right"[label=" Broadcaster: default_authority\nAverage rate: 10.216\nBuffer length: 4.992\nMost recent transform: 1725912013.226065\nOldest transform: 1725912008.233678\n"];
+"base_link" -> "wheel_midfront_left"[label=" Broadcaster: default_authority\nAverage rate: 10.216\nBuffer length: 4.992\nMost recent transform: 1725912013.226065\nOldest transform: 1725912008.233678\n"];
+"base_link" -> "wheel_midfront_right"[label=" Broadcaster: default_authority\nAverage rate: 10.216\nBuffer length: 4.992\nMost recent transform: 1725912013.226065\nOldest transform: 1725912008.233678\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1725912013.2374077"[ shape=plaintext ] ;
+}->"base_link";
+}

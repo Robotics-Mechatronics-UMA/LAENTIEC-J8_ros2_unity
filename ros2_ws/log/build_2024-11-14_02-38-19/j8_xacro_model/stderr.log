@@ -1,0 +1,5 @@
+[31mCMake Error at CMakeLists.txt:33 (install):
+  install TARGETS given target "gazebo_ros_j8_wheels_plugin" which does not
+  exist.
+
+[0m

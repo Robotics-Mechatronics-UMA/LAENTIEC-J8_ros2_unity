@@ -1,0 +1,2 @@
+Invoking command in '/home/k/ros2_ws/build/teleop_twist_keyboard': /usr/bin/cmake /home/k/ros2_ws/src/teleop_twist_keyboard -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/k/ros2_ws/install/teleop_twist_keyboard
+Invoked command in '/home/k/ros2_ws/build/teleop_twist_keyboard' returned '1': /usr/bin/cmake /home/k/ros2_ws/src/teleop_twist_keyboard -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/k/ros2_ws/install/teleop_twist_keyboard

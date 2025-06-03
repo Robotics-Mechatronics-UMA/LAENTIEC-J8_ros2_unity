@@ -1,0 +1,21 @@
+[1.494s] Invoking command in '/home/k/ros2_ws/src/fixposition_pkg': PYTHONPATH=/home/k/ros2_ws/build/fixposition_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/k/ros2_ws/install/fixposition_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/fixposition_pkg build --build-base /home/k/ros2_ws/build/fixposition_pkg/build install --record /home/k/ros2_ws/build/fixposition_pkg/install.log --single-version-externally-managed install_data
+[1.677s] running egg_info
+[1.677s] writing ../../build/fixposition_pkg/fixposition_pkg.egg-info/PKG-INFO
+[1.677s] writing dependency_links to ../../build/fixposition_pkg/fixposition_pkg.egg-info/dependency_links.txt
+[1.677s] writing entry points to ../../build/fixposition_pkg/fixposition_pkg.egg-info/entry_points.txt
+[1.677s] writing requirements to ../../build/fixposition_pkg/fixposition_pkg.egg-info/requires.txt
+[1.677s] writing top-level names to ../../build/fixposition_pkg/fixposition_pkg.egg-info/top_level.txt
+[1.678s] reading manifest file '../../build/fixposition_pkg/fixposition_pkg.egg-info/SOURCES.txt'
+[1.678s] writing manifest file '../../build/fixposition_pkg/fixposition_pkg.egg-info/SOURCES.txt'
+[1.679s] running build
+[1.679s] running build_py
+[1.679s] running install
+[1.679s] running install_lib
+[1.680s] running install_data
+[1.680s] running install_egg_info
+[1.681s] removing '/home/k/ros2_ws/install/fixposition_pkg/lib/python3.10/site-packages/fixposition_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[1.681s] Copying ../../build/fixposition_pkg/fixposition_pkg.egg-info to /home/k/ros2_ws/install/fixposition_pkg/lib/python3.10/site-packages/fixposition_pkg-0.0.0-py3.10.egg-info
+[1.682s] running install_scripts
+[1.698s] Installing imu_subscriber script to /home/k/ros2_ws/install/fixposition_pkg/lib/fixposition_pkg
+[1.699s] writing list of installed files to '/home/k/ros2_ws/build/fixposition_pkg/install.log'
+[1.725s] Invoked command in '/home/k/ros2_ws/src/fixposition_pkg' returned '0': PYTHONPATH=/home/k/ros2_ws/build/fixposition_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/k/ros2_ws/install/fixposition_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/fixposition_pkg build --build-base /home/k/ros2_ws/build/fixposition_pkg/build install --record /home/k/ros2_ws/build/fixposition_pkg/install.log --single-version-externally-managed install_data

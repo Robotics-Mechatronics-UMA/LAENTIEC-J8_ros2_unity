@@ -1,0 +1,21 @@
+[2.727s] Invoking command in '/home/k/ros2_ws/src/position_pkg': PYTHONPATH=/home/k/ros2_ws/build/position_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/k/ros2_ws/install/position_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/position_pkg build --build-base /home/k/ros2_ws/build/position_pkg/build install --record /home/k/ros2_ws/build/position_pkg/install.log --single-version-externally-managed install_data
+[3.038s] running egg_info
+[3.039s] writing ../../build/position_pkg/position_pkg.egg-info/PKG-INFO
+[3.039s] writing dependency_links to ../../build/position_pkg/position_pkg.egg-info/dependency_links.txt
+[3.040s] writing entry points to ../../build/position_pkg/position_pkg.egg-info/entry_points.txt
+[3.040s] writing requirements to ../../build/position_pkg/position_pkg.egg-info/requires.txt
+[3.041s] writing top-level names to ../../build/position_pkg/position_pkg.egg-info/top_level.txt
+[3.043s] reading manifest file '../../build/position_pkg/position_pkg.egg-info/SOURCES.txt'
+[3.043s] writing manifest file '../../build/position_pkg/position_pkg.egg-info/SOURCES.txt'
+[3.044s] running build
+[3.044s] running build_py
+[3.044s] running install
+[3.044s] running install_lib
+[3.046s] running install_data
+[3.046s] running install_egg_info
+[3.048s] removing '/home/k/ros2_ws/install/position_pkg/lib/python3.10/site-packages/position_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[3.048s] Copying ../../build/position_pkg/position_pkg.egg-info to /home/k/ros2_ws/install/position_pkg/lib/python3.10/site-packages/position_pkg-0.0.0-py3.10.egg-info
+[3.049s] running install_scripts
+[3.076s] Installing pose_node script to /home/k/ros2_ws/install/position_pkg/lib/position_pkg
+[3.076s] writing list of installed files to '/home/k/ros2_ws/build/position_pkg/install.log'
+[3.124s] Invoked command in '/home/k/ros2_ws/src/position_pkg' returned '0': PYTHONPATH=/home/k/ros2_ws/build/position_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/k/ros2_ws/install/position_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/position_pkg build --build-base /home/k/ros2_ws/build/position_pkg/build install --record /home/k/ros2_ws/build/position_pkg/install.log --single-version-externally-managed install_data

@@ -1,0 +1,4 @@
+source;share/j8_xacro_model/local_setup.bash
+source;share/j8_xacro_model/local_setup.dsv
+source;share/j8_xacro_model/local_setup.sh
+source;share/j8_xacro_model/local_setup.zsh

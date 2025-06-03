@@ -1,0 +1,24 @@
+[2.778s] Invoking command in '/home/k/ros2_ws/src/lidar_subscriber': PYTHONPATH=/home/k/ros2_ws/build/lidar_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/k/ros2_ws/install/lidar_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lidar_subscriber build --build-base /home/k/ros2_ws/build/lidar_subscriber/build install --record /home/k/ros2_ws/build/lidar_subscriber/install.log --single-version-externally-managed install_data
+[3.087s] running egg_info
+[3.089s] writing ../../build/lidar_subscriber/lidar_subscriber.egg-info/PKG-INFO
+[3.089s] writing dependency_links to ../../build/lidar_subscriber/lidar_subscriber.egg-info/dependency_links.txt
+[3.089s] writing entry points to ../../build/lidar_subscriber/lidar_subscriber.egg-info/entry_points.txt
+[3.090s] writing requirements to ../../build/lidar_subscriber/lidar_subscriber.egg-info/requires.txt
+[3.090s] writing top-level names to ../../build/lidar_subscriber/lidar_subscriber.egg-info/top_level.txt
+[3.093s] reading manifest file '../../build/lidar_subscriber/lidar_subscriber.egg-info/SOURCES.txt'
+[3.093s] writing manifest file '../../build/lidar_subscriber/lidar_subscriber.egg-info/SOURCES.txt'
+[3.093s] running build
+[3.093s] running build_py
+[3.093s] copying lidar_subscriber/lidar_subscriber.py -> /home/k/ros2_ws/build/lidar_subscriber/build/lib/lidar_subscriber
+[3.093s] running install
+[3.094s] running install_lib
+[3.094s] copying /home/k/ros2_ws/build/lidar_subscriber/build/lib/lidar_subscriber/lidar_subscriber.py -> /home/k/ros2_ws/install/lidar_subscriber/lib/python3.10/site-packages/lidar_subscriber
+[3.094s] byte-compiling /home/k/ros2_ws/install/lidar_subscriber/lib/python3.10/site-packages/lidar_subscriber/lidar_subscriber.py to lidar_subscriber.cpython-310.pyc
+[3.095s] running install_data
+[3.095s] running install_egg_info
+[3.098s] removing '/home/k/ros2_ws/install/lidar_subscriber/lib/python3.10/site-packages/lidar_subscriber-0.0.0-py3.10.egg-info' (and everything under it)
+[3.099s] Copying ../../build/lidar_subscriber/lidar_subscriber.egg-info to /home/k/ros2_ws/install/lidar_subscriber/lib/python3.10/site-packages/lidar_subscriber-0.0.0-py3.10.egg-info
+[3.099s] running install_scripts
+[3.128s] Installing lidar_subscriber script to /home/k/ros2_ws/install/lidar_subscriber/lib/lidar_subscriber
+[3.128s] writing list of installed files to '/home/k/ros2_ws/build/lidar_subscriber/install.log'
+[3.176s] Invoked command in '/home/k/ros2_ws/src/lidar_subscriber' returned '0': PYTHONPATH=/home/k/ros2_ws/build/lidar_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/k/ros2_ws/install/lidar_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lidar_subscriber build --build-base /home/k/ros2_ws/build/lidar_subscriber/build install --record /home/k/ros2_ws/build/lidar_subscriber/install.log --single-version-externally-managed install_data

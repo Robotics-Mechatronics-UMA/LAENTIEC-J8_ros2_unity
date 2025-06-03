@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:macro name="camera" params="name parent origin_xyz origin_rpy ros_topic">
+    <link name="${name}">
+      <inertial>
+        <origin xyz="-0.00012066 0.00029097 -0.105" rpy="0 0 0" />
+        <mass value="0.012566" />
+        <inertia ixx="1.3614E-06" ixy="0" ixz="0" iyy="1.3614E-06" iyz="0" izz="2.5133E-06" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="$(find meshes/Back_camera.STL" />
+        </geometry>
+        <!-- The color is predefined -->
+        <material name="">
+          <color rgba="0.79216 0.81961 0.93333 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="$(find meshes/Back_camera.STL" />
+        </geometry>
+      </collision>
+    </link>
+    <joint name="${name}_joint" type="fixed">
+      <origin xyz="${origin_xyz}" rpy="${origin_rpy}" />
+      <parent link="${parent}" />
+      <child link="${name}" />
+      <axis xyz="0 0 0" />
+    </joint>
+  </xacro:macro>
+</robot>
+

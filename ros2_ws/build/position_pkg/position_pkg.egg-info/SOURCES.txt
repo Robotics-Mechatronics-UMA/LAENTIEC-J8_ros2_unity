@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/position_pkg/position_pkg.egg-info/PKG-INFO
+../../build/position_pkg/position_pkg.egg-info/SOURCES.txt
+../../build/position_pkg/position_pkg.egg-info/dependency_links.txt
+../../build/position_pkg/position_pkg.egg-info/entry_points.txt
+../../build/position_pkg/position_pkg.egg-info/requires.txt
+../../build/position_pkg/position_pkg.egg-info/top_level.txt
+../../build/position_pkg/position_pkg.egg-info/zip-safe
+position_pkg/__init__.py
+position_pkg/pose_subscriber_node.py
+resource/position_pkg
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

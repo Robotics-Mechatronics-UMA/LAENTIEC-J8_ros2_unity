@@ -1,0 +1,5 @@
+[console_scripts]
+gps_subscriber = fixposition_pkg.gps_subscriber:main
+imu_subscriber = fixposition_pkg.imu_subscriber:main
+odometry_subscriber = fixposition_pkg.odometry_subscriber:main
+

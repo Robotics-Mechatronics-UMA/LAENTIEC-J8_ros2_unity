@@ -1,0 +1,10 @@
+[0.000000] (-) TimerEvent: {}
+[0.000217] (-) JobUnselected: {'identifier': 'camera_subscriber'}
+[0.000235] (-) JobUnselected: {'identifier': 'fixposition_pkg'}
+[0.000245] (-) JobUnselected: {'identifier': 'hardware_pkg'}
+[0.000257] (-) JobUnselected: {'identifier': 'lidar_subscriber'}
+[0.000264] (-) JobUnselected: {'identifier': 'my_robot_description'}
+[0.000270] (-) JobUnselected: {'identifier': 'position_pkg'}
+[0.000281] (-) JobUnselected: {'identifier': 'ros_tcp_endpoint'}
+[0.000287] (-) JobUnselected: {'identifier': 'teleop_twist_keyboard'}
+[0.000449] (-) EventReactorShutdown: {}

@@ -1,0 +1,35 @@
+[0.604s] Invoking command in '/home/k/ros2_ws/build/j8_xacro_model': CMAKE_PREFIX_PATH=/home/k/ros2_ws/install/teleop_twist_keyboard:/home/k/ros2_ws/install/teleop_pkg:/home/k/ros2_ws/install/ros_tcp_endpoint:/home/k/ros2_ws/install/position_pkg:/home/k/ros2_ws/install/my_robot_description:/home/k/ros2_ws/install/lidar_subscriber:/home/k/ros2_ws/install/fixposition_pkg:/home/k/ros2_ws/install/camera_subscriber:/opt/ros/humble /usr/bin/cmake /home/k/ros2_ws/src/j8_model_xacro -DCMAKE_INSTALL_PREFIX=/home/k/ros2_ws/install/j8_xacro_model
+[1.607s] -- The C compiler identification is GNU 11.4.0
+[1.607s] -- The CXX compiler identification is GNU 11.4.0
+[1.608s] -- Detecting C compiler ABI info
+[1.608s] -- Detecting C compiler ABI info - done
+[1.608s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.608s] -- Detecting C compile features
+[1.608s] -- Detecting C compile features - done
+[1.608s] -- Detecting CXX compiler ABI info
+[1.608s] -- Detecting CXX compiler ABI info - done
+[1.608s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.608s] -- Detecting CXX compile features
+[1.608s] -- Detecting CXX compile features - done
+[1.608s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.608s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.608s] -- Configuring incomplete, errors occurred!
+[1.608s] See also "/home/k/ros2_ws/build/j8_xacro_model/CMakeFiles/CMakeOutput.log".
+[1.608s] [31mCMake Error at CMakeLists.txt:13 (find_package):
+[1.609s]   By not providing "Findgazebo_dev.cmake" in CMAKE_MODULE_PATH this project
+[1.609s]   has asked CMake to find a package configuration file provided by
+[1.609s]   "gazebo_dev", but CMake did not find one.
+[1.609s] 
+[1.609s]   Could not find a package configuration file provided by "gazebo_dev" with
+[1.609s]   any of the following names:
+[1.609s] 
+[1.609s]     gazebo_devConfig.cmake
+[1.609s]     gazebo_dev-config.cmake
+[1.609s] 
+[1.609s]   Add the installation prefix of "gazebo_dev" to CMAKE_PREFIX_PATH or set
+[1.609s]   "gazebo_dev_DIR" to a directory containing one of the above files.  If
+[1.609s]   "gazebo_dev" provides a separate development package or SDK, be sure it has
+[1.609s]   been installed.
+[1.609s] 
+[1.610s] [0m
+[1.611s] Invoked command in '/home/k/ros2_ws/build/j8_xacro_model' returned '1': CMAKE_PREFIX_PATH=/home/k/ros2_ws/install/teleop_twist_keyboard:/home/k/ros2_ws/install/teleop_pkg:/home/k/ros2_ws/install/ros_tcp_endpoint:/home/k/ros2_ws/install/position_pkg:/home/k/ros2_ws/install/my_robot_description:/home/k/ros2_ws/install/lidar_subscriber:/home/k/ros2_ws/install/fixposition_pkg:/home/k/ros2_ws/install/camera_subscriber:/opt/ros/humble /usr/bin/cmake /home/k/ros2_ws/src/j8_model_xacro -DCMAKE_INSTALL_PREFIX=/home/k/ros2_ws/install/j8_xacro_model

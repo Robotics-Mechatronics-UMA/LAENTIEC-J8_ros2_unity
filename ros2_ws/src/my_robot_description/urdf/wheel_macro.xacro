@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+    <!-- Specify some standard inertial calculations https://en.wikipedia.org/wiki/List_of_moments_of_inertia -->
+    <!-- These make use of xacro's mathematical functionality -->
+
+<!--  Se incluye el macro para el cálculo de la inercia -->
+<xacro:include filename="inertial_macros.xacro"/>
+
+<!-- Definicion de xacro ruedas -->
+
+  <xacro:macro name="wheel_macro" params="prefix origin_xyz">
+    <link name="${prefix}_wheel">
+      <visual>
+        <geometry>
+          <cylinder length="0.20" radius="0.28"/> <!-- Radio y ancho de la rueda -->
+        </geometry>
+        <origin rpy="0 1.57 0" xyz="0 0 0"/> <!-- Radio en radianes -->
+        <material name="black"/>
+      </visual>
+      <collision>
+        <geometry>
+          <cylinder length="0.20" radius="0.28"/> <!-- Radio y ancho de la rueda -->
+        </geometry>
+        <origin rpy="0 1.57 0" xyz="0 0 0"/> <!-- Radio en radianes -->
+      </collision>
+      <xacro:inertial_cylinder mass="11" radius="0.28" length="0.20"> 
+        <origin xyz="0 0 0" rpy="0 1.57 0" /> <!-- Radio en radianes -->
+      </xacro:inertial_cylinder>
+    </link>
+
+      <!-- Joint entre chasis y rueda -->
+    <joint name="joint_${prefix}_wheel" type="continuous">
+        <parent link="base_link"/>
+        <child link="${prefix}_wheel"/>
+        <origin rpy="0 0 0" xyz="${origin_xyz}"/> <!-- Posición de la rueda con respecto al chasis -->
+        <axis xyz="-1 0 0"/> <!-- Eje de rotación -->
+    </joint>
+
+
+  </xacro:macro>
+
+</robot>

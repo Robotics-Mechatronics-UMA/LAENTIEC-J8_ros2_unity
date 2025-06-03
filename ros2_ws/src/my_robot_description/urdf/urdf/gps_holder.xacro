@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:macro name="gps_holder" params="name parent origin_xyz origin_rpy">
+    <link name="${name}">
+      <inertial>
+        <origin xyz="0.028467 0.0040708 0.064445" rpy="0 0 0" />
+        <mass value="0.085883" />
+        <inertia ixx="4.8874E-05" ixy="1.086E-09" ixz="1.7125E-08" iyy="6.5272E-05" iyz="-6.869E-06" izz="3.5166E-05" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://my_robot_description/meshes/Right_gps_holder.STL" />
+        </geometry>
+        <material name="">
+          <color rgba="0.4 0.48627 0.24314 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://my_robot_description/meshes/Right_gps_holder.STL" />
+        </geometry>
+      </collision>
+    </link>
+    <xacro:set_gazebo_color link_name="${name}" r="0.2941" g="0.3255" b="0.1255"/> <!-- Military Green -->
+    <joint name="${name}_joint" type="fixed">
+      <origin xyz="${origin_xyz}" rpy="${origin_rpy}" />
+      <parent link="${parent}" />
+      <child link="${name}" />
+      <axis xyz="0 0 0" />
+    </joint>
+  </xacro:macro>
+</robot>
+

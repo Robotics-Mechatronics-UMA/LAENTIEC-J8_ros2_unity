@@ -1,0 +1,26 @@
+running egg_info
+writing ../../build/fixposition_pkg/fixposition_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/fixposition_pkg/fixposition_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/fixposition_pkg/fixposition_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/fixposition_pkg/fixposition_pkg.egg-info/requires.txt
+writing top-level names to ../../build/fixposition_pkg/fixposition_pkg.egg-info/top_level.txt
+reading manifest file '../../build/fixposition_pkg/fixposition_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/fixposition_pkg/fixposition_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+copying fixposition_pkg/fixposition_node.py -> /home/k/ros2_ws/build/fixposition_pkg/build/lib/fixposition_pkg
+copying fixposition_pkg/__init__.py -> /home/k/ros2_ws/build/fixposition_pkg/build/lib/fixposition_pkg
+running install
+running install_lib
+copying /home/k/ros2_ws/build/fixposition_pkg/build/lib/fixposition_pkg/fixposition_node.py -> /home/k/ros2_ws/install/fixposition_pkg/lib/python3.10/site-packages/fixposition_pkg
+copying /home/k/ros2_ws/build/fixposition_pkg/build/lib/fixposition_pkg/__init__.py -> /home/k/ros2_ws/install/fixposition_pkg/lib/python3.10/site-packages/fixposition_pkg
+byte-compiling /home/k/ros2_ws/install/fixposition_pkg/lib/python3.10/site-packages/fixposition_pkg/fixposition_node.py to fixposition_node.cpython-310.pyc
+byte-compiling /home/k/ros2_ws/install/fixposition_pkg/lib/python3.10/site-packages/fixposition_pkg/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/fixposition_pkg -> /home/k/ros2_ws/install/fixposition_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/k/ros2_ws/install/fixposition_pkg/share/fixposition_pkg
+running install_egg_info
+removing '/home/k/ros2_ws/install/fixposition_pkg/lib/python3.10/site-packages/fixposition_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/fixposition_pkg/fixposition_pkg.egg-info to /home/k/ros2_ws/install/fixposition_pkg/lib/python3.10/site-packages/fixposition_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/k/ros2_ws/build/fixposition_pkg/install.log'

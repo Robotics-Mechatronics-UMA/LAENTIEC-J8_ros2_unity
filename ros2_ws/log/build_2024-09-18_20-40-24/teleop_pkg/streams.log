@@ -1,0 +1,25 @@
+[1.213s] Invoking command in '/home/k/ros2_ws/src/teleop_pkg': PYTHONPATH=/home/k/ros2_ws/build/teleop_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/k/ros2_ws/install/teleop_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/teleop_pkg build --build-base /home/k/ros2_ws/build/teleop_pkg/build install --record /home/k/ros2_ws/build/teleop_pkg/install.log --single-version-externally-managed install_data
+[1.384s] running egg_info
+[1.384s] writing ../../build/teleop_pkg/teleop_pkg.egg-info/PKG-INFO
+[1.384s] writing dependency_links to ../../build/teleop_pkg/teleop_pkg.egg-info/dependency_links.txt
+[1.385s] writing entry points to ../../build/teleop_pkg/teleop_pkg.egg-info/entry_points.txt
+[1.385s] writing requirements to ../../build/teleop_pkg/teleop_pkg.egg-info/requires.txt
+[1.385s] writing top-level names to ../../build/teleop_pkg/teleop_pkg.egg-info/top_level.txt
+[1.386s] reading manifest file '../../build/teleop_pkg/teleop_pkg.egg-info/SOURCES.txt'
+[1.386s] writing manifest file '../../build/teleop_pkg/teleop_pkg.egg-info/SOURCES.txt'
+[1.387s] running build
+[1.387s] running build_py
+[1.387s] copying teleop_pkg/teleop_node.py -> /home/k/ros2_ws/build/teleop_pkg/build/lib/teleop_pkg
+[1.387s] running install
+[1.388s] running install_lib
+[1.388s] copying /home/k/ros2_ws/build/teleop_pkg/build/lib/teleop_pkg/teleop_node.py -> /home/k/ros2_ws/install/teleop_pkg/lib/python3.10/site-packages/teleop_pkg
+[1.389s] byte-compiling /home/k/ros2_ws/install/teleop_pkg/lib/python3.10/site-packages/teleop_pkg/teleop_node.py to teleop_node.cpython-310.pyc
+[1.390s] running install_data
+[1.390s] copying package.xml -> /home/k/ros2_ws/install/teleop_pkg/share/teleop_pkg
+[1.390s] running install_egg_info
+[1.392s] removing '/home/k/ros2_ws/install/teleop_pkg/lib/python3.10/site-packages/teleop_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[1.392s] Copying ../../build/teleop_pkg/teleop_pkg.egg-info to /home/k/ros2_ws/install/teleop_pkg/lib/python3.10/site-packages/teleop_pkg-0.0.0-py3.10.egg-info
+[1.393s] running install_scripts
+[1.409s] Installing teleop_node script to /home/k/ros2_ws/install/teleop_pkg/lib/teleop_pkg
+[1.409s] writing list of installed files to '/home/k/ros2_ws/build/teleop_pkg/install.log'
+[1.430s] Invoked command in '/home/k/ros2_ws/src/teleop_pkg' returned '0': PYTHONPATH=/home/k/ros2_ws/build/teleop_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/k/ros2_ws/install/teleop_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/teleop_pkg build --build-base /home/k/ros2_ws/build/teleop_pkg/build install --record /home/k/ros2_ws/build/teleop_pkg/install.log --single-version-externally-managed install_data

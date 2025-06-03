@@ -1,0 +1,21 @@
+[1.425s] Invoking command in '/home/k/ros2_ws/src/hardware_pkg': PYTHONPATH=/home/k/ros2_ws/build/hardware_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/k/ros2_ws/install/hardware_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/hardware_pkg build --build-base /home/k/ros2_ws/build/hardware_pkg/build install --record /home/k/ros2_ws/build/hardware_pkg/install.log --single-version-externally-managed install_data
+[1.701s] running egg_info
+[1.702s] writing ../../build/hardware_pkg/hardware_pkg.egg-info/PKG-INFO
+[1.702s] writing dependency_links to ../../build/hardware_pkg/hardware_pkg.egg-info/dependency_links.txt
+[1.702s] writing entry points to ../../build/hardware_pkg/hardware_pkg.egg-info/entry_points.txt
+[1.703s] writing requirements to ../../build/hardware_pkg/hardware_pkg.egg-info/requires.txt
+[1.703s] writing top-level names to ../../build/hardware_pkg/hardware_pkg.egg-info/top_level.txt
+[1.706s] reading manifest file '../../build/hardware_pkg/hardware_pkg.egg-info/SOURCES.txt'
+[1.706s] writing manifest file '../../build/hardware_pkg/hardware_pkg.egg-info/SOURCES.txt'
+[1.706s] running build
+[1.706s] running build_py
+[1.706s] running install
+[1.707s] running install_lib
+[1.708s] running install_data
+[1.709s] running install_egg_info
+[1.711s] removing '/home/k/ros2_ws/install/hardware_pkg/lib/python3.10/site-packages/hardware_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[1.711s] Copying ../../build/hardware_pkg/hardware_pkg.egg-info to /home/k/ros2_ws/install/hardware_pkg/lib/python3.10/site-packages/hardware_pkg-0.0.0-py3.10.egg-info
+[1.712s] running install_scripts
+[1.736s] Installing control_node script to /home/k/ros2_ws/install/hardware_pkg/lib/hardware_pkg
+[1.736s] writing list of installed files to '/home/k/ros2_ws/build/hardware_pkg/install.log'
+[1.790s] Invoked command in '/home/k/ros2_ws/src/hardware_pkg' returned '0': PYTHONPATH=/home/k/ros2_ws/build/hardware_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/k/ros2_ws/install/hardware_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/hardware_pkg build --build-base /home/k/ros2_ws/build/hardware_pkg/build install --record /home/k/ros2_ws/build/hardware_pkg/install.log --single-version-externally-managed install_data

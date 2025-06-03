@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="argo">
+  <!-- URDF for Argo Robot -->
+  <!-- Automatically created by SolidWorks to URDF Exporter -->
+  <!-- Exporter Version: 1.6.0-4-g7f85cfe, Build: 1.6.7995.38578 -->
+
+  <!-- Properties -->
+  <xacro:property name="M_PI" value="3.14159265358979323846"/>
+  <xacro:property name="robot_namespace" value="ARGJ801"/>
+  <xacro:property name="mesh_path" value="package://my_robot_description/meshes"/>
+
+  <!-- Included Xacro Files -->
+  <xacro:include filename="wheel.urdf.xacro"/>
+  <xacro:include filename="set_color.xacro"/>
+  <xacro:include filename="lidar.xacro"/>
+  <xacro:include filename="panel.xacro"/>
+  <xacro:include filename="side_bar.xacro"/>
+  <xacro:include filename="gps_holder.xacro"/>
+  <xacro:include filename="gps.xacro"/>
+  <xacro:include filename="camera.xacro"/>
+  <xacro:include filename="fixposition_sensor.xacro"/>
+  <xacro:include filename="fixposition_holder.xacro"/>
+  <!--<xacro:include filename="$(find zed_camera_pkg)/urdf/camera_macro.urdf"/>-->
+
+  <!-- Base Link -->
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.042688 0.0075201 0.060368"
+        rpy="0 0 0" />
+      <mass
+        value="1000.6" />
+      <inertia
+        ixx="162.15"
+        ixy="-2.4702E-05"
+        ixz="-5.0479"
+        iyy="867.35"
+        iyz="-3.1093E-05"
+        izz="5000.46" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.50196 0.50196 0.50196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <xacro:set_gazebo_color link_name="base_link" r="0.3" g="0.3" b="0.3"/> <!-- Dark Grey -->
+
+  <!-- J8 Top Link -->
+ <link
+    name="J8_top">
+    <inertial>
+      <origin
+        xyz="0.36558 -4.2501E-17 0.10133"
+        rpy="0 0 0" />
+      <mass
+        value="639.03" />
+      <inertia
+        ixx="110.75"
+        ixy="3.1317E-14"
+        ixz="-25.628"
+        iyy="522.18"
+        iyz="6.8087E-15"
+        izz="2000.13" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_description/meshes/J8_top.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.4 0.48627 0.24314 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_description/meshes/J8_top.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <xacro:set_gazebo_color link_name="J8_top" r="0.2941" g="0.3255" b="0.1255"/> <!-- Military Green -->
+
+  <!-- Joint Between Top and Base -->
+  <joint name="Top_Base_joint" type="fixed">
+    <origin
+      xyz="-0.0093372 0.0075201 0.265"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="J8_top" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  
+  <!-- Bridge Link -->
+
+    <link
+    name="Bridge">
+    <inertial>
+      <origin
+        xyz="-4.4409E-16 0.0076101 0.13629"
+        rpy="0 0 0" />
+      <mass
+        value="7.6437" />
+      <inertia
+        ixx="1.3715"
+        ixy="4.0621E-14"
+        ixz="-8.0678E-18"
+        iyy="0.083158"
+        iyz="-4.1934E-15"
+        izz="1.3176" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_description/meshes/Bridge.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.4 0.48627 0.24314 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_robot_description/meshes/Bridge.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <xacro:set_gazebo_color link_name="Bridge" r="0.2941" g="0.3255" b="0.1255"/> <!-- Military Green -->
+
+  <!-- Joint Between Bridge and Top -->
+  <joint name="Top_Bridge_joint" type="fixed">
+    <origin
+      xyz="0.82 0 0.31021"
+      rpy="0 0 0" />
+    <parent
+      link="J8_top" />
+    <child
+      link="Bridge" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  
+    <!-- Instance of Bridge Panels -->
+  <xacro:panel name="Bridge_panel_1" inertial_xyz="-0.2533 -0.13389 0.21171" joint_xyz="0.2533 0.14912 0.21171" joint_rpy="1.5708 0 0"/>
+  <xacro:panel name="Bridge_panel_2" inertial_xyz="-0.2533 -0.13389 0.21171" joint_xyz="-0.2533 0.15172 0.21171" joint_rpy="1.5708 0 -3.1416"/>
+  <xacro:panel name="Bridge_panel_3" inertial_xyz="-0.2533 -0.13389 0.21171" joint_xyz="0.2533 -0.1365 0.21171" joint_rpy="1.5708 0 0"/>
+  <xacro:panel name="Bridge_panel_4" inertial_xyz="-0.2533 -0.13389 0.21171" joint_xyz="-0.2533 -0.13389 0.21171" joint_rpy="1.5708 0 -3.1416"/>
+
+  <!-- Robot side bars -->
+  <xacro:bar name="Left_bar" origin_xyz="-0.7165 0.7825 0.185"/>
+  <xacro:bar name="Right_bar" origin_xyz="-0.7165 -0.7125 0.185"/>
+
+  <!-- GPS Holders -->
+  <xacro:gps_holder name="Left_gps_holder" parent="Bridge" origin_xyz="-0.007 0.601 0.21421" origin_rpy="1.5708 0 1.5708" />
+  <xacro:gps_holder name="Right_gps_holder" parent="Bridge" origin_xyz="-0.007 -0.51339 0.21421" origin_rpy="1.5708 0 1.5708" />
+
+  <!-- GPS with Gazebo Plugin -->
+  <xacro:gps side="Left" origin_xyz="-0.066 0.012 -0.066" origin_rpy="1.5708 1.5708 ${M_PI}"  gps_sensor_name="rover_gps" frame_name="rover_gps" fix_topic="/rover/gps/fix" vel_topic="/rover/gps/vel"/>
+  <xacro:gps side="Right" origin_xyz="-0.066 0.012 -0.066" origin_rpy="1.5708 1.5708 ${M_PI}"  gps_sensor_name="base_gps" frame_name="base_gps" fix_topic="/base/gps/fix" vel_topic="/base/gps/vel"/>
+
+  <!-- Lidar -->
+  <xacro:lidar name="Velodyne" parent="J8_top" origin_xyz="1.6279 -0.0022244 0.17" origin_rpy="0 0 0" mass="0.61592" update_rate="10" min_angle="${-M_PI/2}" max_angle="${M_PI/2}" stddev="0.008" num_samples="431" min_range="0.2"  max_range="35.0" />
+  <xacro:lidar name="Sick" parent="J8_top" origin_xyz="1.50 0.02 0.27732" origin_rpy="0 0 0" mass="0.22144" update_rate="10" min_angle="${-M_PI/2}" max_angle="${M_PI/2}" stddev="0.008" num_samples="181" min_range="0.2"  max_range="8.0"/>
+
+  <!-- Front and Back Camera 
+  <xacro:camera name="Back_camera" parent="Bridge" origin_xyz="-0.11 0 0.18021" origin_rpy="0 1.5708 0" ros_topic="/back_camera"/>
+  <xacro:camera name="Front_camera" parent="Bridge" origin_xyz="0.11 0 0.18021" origin_rpy="0 1.5708 0" ros_topic="/front_camera"/>-->
+
+  <!-- Zedd Camera 
+  <xacro:zed_camera name="zed_camera" parent="Bridge" origin_xyz="0.11 0 0.23" origin_rpy="0 ${M_PI} 0" ros_topic="/zedd_camera"/>-->
+
+
+  <!-- Wheel instances-->
+  <xacro:wheel_with_suspension number="1" parent="base_link" suspension_xyz="-1.0593 -0.45 -0.225" wheel_xyz = "0.0 -0.18 0.0"/>
+  <xacro:wheel_with_suspension number="2" parent="base_link" suspension_xyz="-0.36934 -0.45 -0.225" wheel_xyz="0.0 -0.18 0.0"/>
+  <xacro:wheel_with_suspension number="3" parent="base_link" suspension_xyz="0.32066 -0.45 -0.225" wheel_xyz="0.0 -0.18 0.0"/>
+  <xacro:wheel_with_suspension number="4" parent="base_link" suspension_xyz="1.0107 -0.45 -0.225" wheel_xyz="0.0 -0.18 0.0"/>
+  <xacro:wheel_with_suspension number="5" parent="base_link" suspension_xyz="-1.0593 0.45 -0.225" wheel_xyz="0.0 0.18 0.0"/>
+  <xacro:wheel_with_suspension number="6" parent="base_link" suspension_xyz="-0.36934 0.45 -0.225" wheel_xyz="0.0 0.18 0.0"/>
+  <xacro:wheel_with_suspension number="7" parent="base_link" suspension_xyz="0.32066 0.45 -0.225" wheel_xyz="0.0 0.18 0.0"/>
+  <xacro:wheel_with_suspension number="8" parent="base_link" suspension_xyz="1.0107 0.45 -0.225" wheel_xyz="0.0 0.18 0.0"/>
+
+  <!-- Fixposition holder-->
+  <xacro:bridge_joint xyz="-0.0028148 -0.11697 0.21171" rpy="1.5708 0 1.5708"/>
+  <!-- Fixposition sensor
+  <xacro:fixposition_sensor parent="Bridge" xyz="-0.0028148 -0.11697 0.21171" rpy="1.5708 0 1.5708"/>-->
+    
+</robot>
+
+ 

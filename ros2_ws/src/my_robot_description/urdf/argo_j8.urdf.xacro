@@ -1,0 +1,333 @@
+<?xml version="1.0"?>
+<robot name="argo_j8" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="inertial_macros.xacro"/>
+
+  <!-- Definicion de materiales constantes -->
+  <material name="Military green">
+    <color rgba="0.29 0.33 0.13 1.0"/>
+  </material>
+
+  <material name="black">
+    <color rgba="0.0 0.0 0.0 1.0"/>
+  </material>
+
+  <material name="blue">
+    <color rgba="0.0 1.0 1.0 1.0"/>
+  </material>
+
+  <material name="grey">
+    <color rgba="0.7 0.7 0.7 1.0"/>
+  </material>
+
+  <!-- Chasis -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="1.40 2.94 0.81"/> <!-- Dimensiones en metros -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <material name="Military green"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="1.40 2.94 0.81"/> <!-- Dimensiones en metros -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+    </collision>
+    <xacro:inertial_box mass="750" x="1.40" y="2.94" z="0.81">
+     <origin xyz="0 0 0" rpy="0 0 0" />
+    </xacro:inertial_box>
+  </link>
+
+
+  <!-- LiDAR, Cámara y sensor -->
+   <link name="LiDAR">
+    <visual>
+      <geometry>
+        <cylinder radius="0.1" length="0.05"/> <!-- Dimensiones en metros -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <material name="blue"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.2 0.2 0.05"/> <!-- Dimensiones en metros -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+    </collision>
+  </link> 
+
+   <link name="camera">
+    <visual>
+      <geometry>
+        <box size="0.1 0.1 0.1"/> <!-- Dimensiones en metros -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <material name="grey"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.1 0.1 0.1"/> <!-- Dimensiones en metros -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+    </collision>
+  </link> 
+
+  <!-- Definicion de las 8 ruedas -->
+  
+  <!-- Rueda delantera izquierda -->
+  <link name="wheel_front_left">
+    <visual>
+      <geometry>
+        <cylinder radius="0.28" length="0.20"/> <!-- Radio y ancho de la rueda -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 1.57 0" /> <!-- Radio en radianes -->
+      <material name="black"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.28" length="0.20"/> <!-- Radio y ancho de la rueda -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 1.57 0" /> <!-- Radio en radianes -->
+    </collision>
+    <xacro:inertial_cylinder mass="11" radius="0.28" length="0.20"> 
+      <origin xyz="0 0 0" rpy="0 1.57 0" /> <!-- Radio en radianes -->
+    </xacro:inertial_cylinder>
+  </link>
+
+  <!-- Rueda delantera derecha -->
+  <link name="wheel_front_right">
+    <visual>
+      <geometry>
+        <cylinder radius="0.28" length="0.20"/> <!-- Radio y ancho de la rueda -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 1.57 0" />
+      <material name="black"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.28" length="0.20"/> <!-- Radio y ancho de la rueda -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 1.57 0" />
+    </collision>
+    <xacro:inertial_cylinder mass="11" radius="0.28" length="0.20"> 
+      <origin xyz="0 0 0" rpy="0 1.57 0" /> <!-- Radio en radianes -->
+    </xacro:inertial_cylinder>
+  </link>
+  
+
+  <!-- Rueda delantera_media izquierda -->
+  <link name="wheel_midfront_left">
+    <visual>
+      <geometry>
+        <cylinder radius="0.28" length="0.20"/> <!-- Radio y ancho de la rueda -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 1.57 0" />
+      <material name="black"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.28" length="0.20"/> <!-- Radio y ancho de la rueda -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 1.57 0" />
+    </collision>
+    <xacro:inertial_cylinder mass="11" radius="0.28" length="0.20"> 
+      <origin xyz="0 0 0" rpy="0 1.57 0" /> <!-- Radio en radianes -->
+    </xacro:inertial_cylinder>
+  </link>
+  
+    <!-- Rueda delantera_media derecha -->
+  <link name="wheel_midfront_right">
+    <visual>
+      <geometry>
+        <cylinder radius="0.28" length="0.20"/> <!-- Radio y ancho de la rueda -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 1.57 0" />
+      <material name="black"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.28" length="0.20"/> <!-- Radio y ancho de la rueda -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 1.57 0" />
+    </collision>
+    <xacro:inertial_cylinder mass="11" radius="0.28" length="0.20"> 
+      <origin xyz="0 0 0" rpy="0 1.57 0" /> <!-- Radio en radianes -->
+    </xacro:inertial_cylinder>
+  </link>
+  
+    <!-- Rueda trasera_media izquierda -->
+  <link name="wheel_midback_left">
+    <visual>
+      <geometry>
+        <cylinder radius="0.28" length="0.20"/> <!-- Radio y ancho de la rueda -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 1.57 0" />
+      <material name="black"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.28" length="0.20"/> <!-- Radio y ancho de la rueda -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 1.57 0" />
+    </collision>
+    <xacro:inertial_cylinder mass="11" radius="0.28" length="0.20"> 
+      <origin xyz="0 0 0" rpy="0 1.57 0" /> <!-- Radio en radianes -->
+    </xacro:inertial_cylinder>
+  </link>
+
+  <!-- Rueda trasera_media derecha -->
+  <link name="wheel_midback_right">
+    <visual>
+      <geometry>
+        <cylinder radius="0.28" length="0.20"/> <!-- Radio y ancho de la rueda -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 1.57 0" />
+      <material name="black"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.28" length="0.20"/> <!-- Radio y ancho de la rueda -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 1.57 0" />
+    </collision>
+    <xacro:inertial_cylinder mass="11" radius="0.28" length="0.20"> 
+      <origin xyz="0 0 0" rpy="0 1.57 0" /> <!-- Radio en radianes -->
+    </xacro:inertial_cylinder>
+  </link>
+  
+    <!-- Rueda trasera izquierda -->
+  <link name="wheel_back_left">
+    <visual>
+      <geometry>
+        <cylinder radius="0.28" length="0.20"/> <!-- Radio y ancho de la rueda -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 1.57 0" />
+      <material name="black"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.28" length="0.20"/> <!-- Radio y ancho de la rueda -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 1.57 0" />
+    </collision>
+    <xacro:inertial_cylinder mass="11" radius="0.28" length="0.20"> 
+      <origin xyz="0 0 0" rpy="0 1.57 0" /> <!-- Radio en radianes -->
+    </xacro:inertial_cylinder>
+  </link>
+  
+  <!-- Rueda trasera derecha -->
+  <link name="wheel_back_right">
+    <visual>
+      <geometry>
+        <cylinder radius="0.28" length="0.20"/> <!-- Radio y ancho de la rueda -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 1.57 0" />
+      <material name="black"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.28" length="0.20"/> <!-- Radio y ancho de la rueda -->
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 1.57 0" />
+    </collision>
+    <xacro:inertial_cylinder mass="11" radius="0.28" length="0.20"> 
+      <origin xyz="0 0 0" rpy="0 1.57 0" /> <!-- Radio en radianes -->
+    </xacro:inertial_cylinder>
+  </link>
+
+  <!-- Link virtual para base del plano.  -->
+  <link name="base_footprint"/>
+
+  <!-- Joint de referencia de la base del plano y Argo J8 -->
+  <joint name="joint_base_footprint" type="fixed">
+    <parent link="base_link"/>
+    <child link="base_footprint"/>
+    <origin xyz="0 0 -0.605" rpy="0 0 0"/> <!-- Posición de la rueda con respecto al chasis -->
+  </joint>
+
+
+  <!-- Definicion de Joints entre chasis y LiDAR, cámara y sensores, y, entre chasis y rueda -->
+
+  <!-- Joint entre chasis y LiDAR -->
+  <joint name="joint_LiDAR" type="fixed">
+    <parent link="base_link"/>
+    <child link="LiDAR"/>
+    <origin xyz="0 1.47 0" rpy="0 0 0"/> <!-- Posición de la rueda con respecto al chasis -->
+  </joint>
+
+  <!-- Joint entre chasis y camera -->
+  <joint name="joint_camera" type="fixed">
+    <parent link="base_link"/>
+    <child link="camera"/>
+    <origin xyz="0 1.06 0.405" rpy="0 0 0"/> <!-- Posición de la rueda con respecto al chasis -->
+  </joint>
+  
+  <!-- Joint entre chasis y rueda delantera izquierda -->
+  <joint name="joint_wheel_front_left" type="continuous">
+    <parent link="base_link"/>
+    <child link="wheel_front_left"/>
+    <origin xyz="-0.7 0.88 -0.325" rpy="0 0 0"/> <!-- Posición de la rueda con respecto al chasis -->
+    <axis xyz="-1 0 0"/> <!-- Eje de rotación -->
+  </joint>
+  
+    <!-- Joint entre chasis y rueda delantera derecha -->
+  <joint name="joint_wheel_front_right" type="continuous">
+    <parent link="base_link"/>
+    <child link="wheel_front_right"/>
+    <origin xyz="0.7 0.88 -0.325" rpy="0 0 0"/> <!-- Posición de la rueda con respecto al chasis -->
+    <axis xyz="-1 0 0"/> <!-- Eje de rotación -->
+  </joint>
+  
+    <!-- Joint entre chasis y rueda delantera_media izquierda -->
+  <joint name="joint_wheel_midfront_left" type="continuous">
+    <parent link="base_link"/>
+    <child link="wheel_midfront_left"/>
+    <origin xyz="-0.7 0.19 -0.325" rpy="0 0 0"/> <!-- Posición de la rueda con respecto al chasis -->
+    <axis xyz="-1 0 0"/> <!-- Eje de rotación -->
+  </joint>
+  
+    <!-- Joint entre chasis y rueda delantera_media derecha -->
+  <joint name="joint_wheel_midfront_right" type="continuous">
+    <parent link="base_link"/>
+    <child link="wheel_midfront_right"/>
+    <origin xyz="0.7 0.19 -0.325" rpy="0 0 0"/> <!-- Posición de la rueda con respecto al chasis -->
+    <axis xyz="-1 0 0"/> <!-- Eje de rotación -->
+  </joint>
+
+  <!-- Joint entre chasis y rueda trasera_media izquierda -->
+  <joint name="joint_wheel_midback_left" type="continuous">
+    <parent link="base_link"/>
+    <child link="wheel_midback_left"/>
+    <origin xyz="-0.7 -0.5 -0.325" rpy="0 0 0"/> <!-- Posición de la rueda con respecto al chasis -->
+    <axis xyz="-1 0 0"/> <!-- Eje de rotación -->
+  </joint>
+
+  <!-- Joint entre chasis y rueda trasera_media derecha -->
+  <joint name="joint_wheel_midback_right" type="continuous">
+    <parent link="base_link"/>
+    <child link="wheel_midback_right"/>
+    <origin xyz="0.7 -0.5 -0.325" rpy="0 0 0"/> <!-- Posición de la rueda con respecto al chasis -->
+    <axis xyz="-1 0 0"/> <!-- Eje de rotación -->
+  </joint>
+  
+  <!-- Joint entre chasis y rueda trasera izquierda -->
+  <joint name="joint_wheel_back_left" type="continuous">
+    <parent link="base_link"/>
+    <child link="wheel_back_left"/>
+    <origin xyz="-0.7 -1.19 -0.325" rpy="0 0 0"/> <!-- Posición de la rueda con respecto al chasis -->
+    <axis xyz="-1 0 0"/> <!-- Eje de rotación -->
+  </joint>
+  
+  <!-- Joint entre chasis y rueda trasera derecha -->
+  <joint name="joint_wheel_back_right" type="continuous">
+    <parent link="base_link"/>
+    <child link="wheel_back_right"/>
+    <origin xyz="0.7 -1.19 -0.325" rpy="0 0 0"/> <!-- Posición de la rueda con respecto al chasis -->
+    <axis xyz="-1 0 0"/> <!-- Eje de rotación -->
+  </joint>
+
+  
+</robot>
+

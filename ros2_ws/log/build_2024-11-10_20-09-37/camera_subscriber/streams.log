@@ -1,0 +1,21 @@
+[2.686s] Invoking command in '/home/k/ros2_ws/src/camera_subscriber': PYTHONPATH=/home/k/ros2_ws/build/camera_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/k/ros2_ws/install/camera_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/camera_subscriber build --build-base /home/k/ros2_ws/build/camera_subscriber/build install --record /home/k/ros2_ws/build/camera_subscriber/install.log --single-version-externally-managed install_data
+[2.998s] running egg_info
+[2.998s] writing ../../build/camera_subscriber/camera_subscriber.egg-info/PKG-INFO
+[2.999s] writing dependency_links to ../../build/camera_subscriber/camera_subscriber.egg-info/dependency_links.txt
+[2.999s] writing entry points to ../../build/camera_subscriber/camera_subscriber.egg-info/entry_points.txt
+[2.999s] writing requirements to ../../build/camera_subscriber/camera_subscriber.egg-info/requires.txt
+[2.999s] writing top-level names to ../../build/camera_subscriber/camera_subscriber.egg-info/top_level.txt
+[3.001s] reading manifest file '../../build/camera_subscriber/camera_subscriber.egg-info/SOURCES.txt'
+[3.003s] writing manifest file '../../build/camera_subscriber/camera_subscriber.egg-info/SOURCES.txt'
+[3.003s] running build
+[3.003s] running build_py
+[3.004s] running install
+[3.004s] running install_lib
+[3.006s] running install_data
+[3.006s] running install_egg_info
+[3.009s] removing '/home/k/ros2_ws/install/camera_subscriber/lib/python3.10/site-packages/camera_subscriber-0.0.0-py3.10.egg-info' (and everything under it)
+[3.009s] Copying ../../build/camera_subscriber/camera_subscriber.egg-info to /home/k/ros2_ws/install/camera_subscriber/lib/python3.10/site-packages/camera_subscriber-0.0.0-py3.10.egg-info
+[3.010s] running install_scripts
+[3.031s] Installing camera_subscriber script to /home/k/ros2_ws/install/camera_subscriber/lib/camera_subscriber
+[3.032s] writing list of installed files to '/home/k/ros2_ws/build/camera_subscriber/install.log'
+[3.084s] Invoked command in '/home/k/ros2_ws/src/camera_subscriber' returned '0': PYTHONPATH=/home/k/ros2_ws/build/camera_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/k/ros2_ws/install/camera_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/camera_subscriber build --build-base /home/k/ros2_ws/build/camera_subscriber/build install --record /home/k/ros2_ws/build/camera_subscriber/install.log --single-version-externally-managed install_data

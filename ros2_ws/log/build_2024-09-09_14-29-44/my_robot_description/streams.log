@@ -1,0 +1,33 @@
+[1.134s] Invoking command in '/home/k/ros2_ws/src/my_robot_description': PYTHONPATH=/home/k/ros2_ws/build/my_robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/k/ros2_ws/install/my_robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_robot_description build --build-base /home/k/ros2_ws/build/my_robot_description/build install --record /home/k/ros2_ws/build/my_robot_description/install.log --single-version-externally-managed install_data
+[1.309s] running egg_info
+[1.309s] creating ../../build/my_robot_description/my_robot_description.egg-info
+[1.310s] writing ../../build/my_robot_description/my_robot_description.egg-info/PKG-INFO
+[1.310s] writing dependency_links to ../../build/my_robot_description/my_robot_description.egg-info/dependency_links.txt
+[1.310s] writing entry points to ../../build/my_robot_description/my_robot_description.egg-info/entry_points.txt
+[1.310s] writing requirements to ../../build/my_robot_description/my_robot_description.egg-info/requires.txt
+[1.310s] writing top-level names to ../../build/my_robot_description/my_robot_description.egg-info/top_level.txt
+[1.310s] writing manifest file '../../build/my_robot_description/my_robot_description.egg-info/SOURCES.txt'
+[1.311s] reading manifest file '../../build/my_robot_description/my_robot_description.egg-info/SOURCES.txt'
+[1.311s] writing manifest file '../../build/my_robot_description/my_robot_description.egg-info/SOURCES.txt'
+[1.311s] running build
+[1.312s] running build_py
+[1.312s] creating /home/k/ros2_ws/build/my_robot_description/build
+[1.312s] creating /home/k/ros2_ws/build/my_robot_description/build/lib
+[1.312s] creating /home/k/ros2_ws/build/my_robot_description/build/lib/my_robot_description
+[1.312s] copying my_robot_description/__init__.py -> /home/k/ros2_ws/build/my_robot_description/build/lib/my_robot_description
+[1.312s] running install
+[1.312s] running install_lib
+[1.312s] creating /home/k/ros2_ws/install/my_robot_description/lib/python3.10/site-packages/my_robot_description
+[1.321s] copying /home/k/ros2_ws/build/my_robot_description/build/lib/my_robot_description/__init__.py -> /home/k/ros2_ws/install/my_robot_description/lib/python3.10/site-packages/my_robot_description
+[1.321s] byte-compiling /home/k/ros2_ws/install/my_robot_description/lib/python3.10/site-packages/my_robot_description/__init__.py to __init__.cpython-310.pyc
+[1.321s] running install_data
+[1.321s] creating /home/k/ros2_ws/install/my_robot_description/share/ament_index
+[1.321s] creating /home/k/ros2_ws/install/my_robot_description/share/ament_index/resource_index
+[1.321s] creating /home/k/ros2_ws/install/my_robot_description/share/ament_index/resource_index/packages
+[1.321s] copying resource/my_robot_description -> /home/k/ros2_ws/install/my_robot_description/share/ament_index/resource_index/packages
+[1.321s] copying package.xml -> /home/k/ros2_ws/install/my_robot_description/share/my_robot_description
+[1.322s] running install_egg_info
+[1.322s] Copying ../../build/my_robot_description/my_robot_description.egg-info to /home/k/ros2_ws/install/my_robot_description/lib/python3.10/site-packages/my_robot_description-0.0.0-py3.10.egg-info
+[1.322s] running install_scripts
+[1.328s] writing list of installed files to '/home/k/ros2_ws/build/my_robot_description/install.log'
+[1.351s] Invoked command in '/home/k/ros2_ws/src/my_robot_description' returned '0': PYTHONPATH=/home/k/ros2_ws/build/my_robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/k/ros2_ws/install/my_robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_robot_description build --build-base /home/k/ros2_ws/build/my_robot_description/build install --record /home/k/ros2_ws/build/my_robot_description/install.log --single-version-externally-managed install_data

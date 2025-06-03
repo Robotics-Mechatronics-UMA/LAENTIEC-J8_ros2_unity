@@ -1,0 +1,3 @@
+[console_scripts]
+pose_node = position_pkg.pose_subscriber_node:main
+

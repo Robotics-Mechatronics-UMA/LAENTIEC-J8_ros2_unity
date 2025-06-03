@@ -1,0 +1,3 @@
+[console_scripts]
+control_node = hardware_pkg.control_node:main
+
