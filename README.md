@@ -4,6 +4,8 @@
 ## Contents:
 This repository contains the Unity Project, the ROS2 work-space and all the required files (textures, models, ect. ect.).
 
+Some **videos** can be seen at https://www.youtube.com/playlist?list=PLzGHhHCD9XWRZUDRAvq-ftrLqUgAzODbC. 
+
 ## 1. Introduction
 This project aims to simulate the behaviour of an ARGO J8 mobile robot in a virtual environment created within Unity. The simulation enables testing and development of control and perception algorithms in a controlled setting before implementation on the physical robot.
 
