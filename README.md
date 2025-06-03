@@ -25,15 +25,15 @@ Prerequisites:
  * Clone the ROS2 workspace:
 
 ```
-git clone https://github.com/Kmdnb/TFG_KDN_UnityROS2.git
-cd TFG_KDN_UnityROS2/src 
+git clone https://github.com/Robotics-Mechatronics-UMA/LAENTIEC-J8_ros2_unity.git
+cd LAENTIEC-J8_ros2_unity/src 
 ```
  * Compile the packages:
 ```
 colcon build
 ```
 * **Unity Configuration**:
-* Download the folder containing the project: Unity-ROS2-Project. **IMPORTANT**: This repository is being updated. In the meantime, please refer to https://github.com/Kmdnb/TFG_KDN_UnityROS2/tree/main for the Unity files.
+* Download the folder containing the project: Unity-ROS2-Project. **IMPORTANT**: This repository is being updated. In the meantime, please refer to https://github.com/Robotics-Mechatronics-UMA/LAENTIEC-J8_ros2_unity/tree/main for the Unity files.
 
 * Open the Unity project:
  * From Unity Hub - Select "Open project": Once the editor has started, you will see a welcome screen. Look for and select the "Open project" option.
