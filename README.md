@@ -4,6 +4,14 @@
 ## Contents:
 This repository contains the Unity Project, the ROS2 work-space and all the required files (textures, models, ect. ect.).
 
+The article describing this project can be found at https://doi.org/10.17979/ja-cea.2025.46.12187
+
+**To cite this article:** 
+
+De Nóbrega-Buyón, K., Fernández-Lozano, J.J.*, Vázquez-Martín, R. 2025. Modelling and Simulation of a Mobile Robot in natural terrain using ROS 2 and Unity 3D.
+Jornadas de Automática, 46. https://doi.org/10.17979/ja-cea.2025.46.12187
+
+
 Some **videos** can be seen at https://www.youtube.com/playlist?list=PLzGHhHCD9XWRZUDRAvq-ftrLqUgAzODbC. 
 
 ## 1. Introduction
